@@ -15,6 +15,8 @@ I’m a Ph.D. candidate in Computer Science (Information Security Program) at [K
   - Space and satellite communication security; and
 + Security and privacy for blockchains and cryptocurrencies.
 
+I also help maintain the [Security and Privacy Conference Deadlines](https://sec-deadlines.github.io/) webpage.
+
 ## News
 
 {% include news-list.html limit=10 compact=true %}
