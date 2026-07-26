@@ -24,17 +24,19 @@ repository               : "hcnam/hcnam.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpeg"
-  name             : "Hocheol Nam"
+  name             : "Hocheol Nam (남호철)"
   pronouns         : # example: "she/her"  
-  bio              : "Security PhD student at KAIST"
+  bio              : "Ph.D. candidate at KAIST"
   location         : "Daejeon, Republic of Korea"
-  employer         : "KAIST"
+  employer         : "NetSP Lab, KAIST"
   uri              : # URL
   email            : "hcnam@kaist.ac.kr" 
+  cv               : "/files/hcnam_cv.pdf"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
+  dblp             : "https://dblp.org/pid/303/4635-1"
   googlescholar    : "https://scholar.google.com/citations?user=WPRYZeQAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
@@ -87,7 +89,7 @@ publication_category:
   preprints:
     title: 'Preprints'    
   conferences:
-    title: 'Conference Papers'
+    title: 'International Papers'
   domestics:
     title: 'Domestic Papers'
 
@@ -221,6 +223,8 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  news:
+    output: false
   teaching:
     output: true
     permalink: /:collection/:path/

@@ -6,31 +6,49 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="publications__intro">
+    You can also find my papers on
+    <a href="{{ site.author.googlescholar }}">Google Scholar</a>, or <a href="{{ site.author.dblp }}">DBLP</a>.
+  </p>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+
+
+<div class="publications__tier-legend" role="note" aria-label="Publication badge color legend">
+  <span class="publications__tier-legend-title">Venue badge colors:</span>
+  <span class="publications__tier-legend-item">
+    <span class="publications__tier-swatch publications__tier-swatch--tier-1" aria-hidden="true"></span>
+    Top Conferences (Tier-1)
+  </span>
+  <span class="publications__tier-legend-item">
+    <span class="publications__tier-swatch publications__tier-swatch--tier-2" aria-hidden="true"></span>
+    Tier-2
+  </span>
+  <span class="publications__tier-legend-item">
+    <span class="publications__tier-swatch publications__tier-swatch--others" aria-hidden="true"></span>
+    Others
+  </span>
+</div>
+
+
+<div class="publications">
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for category in site.publication_category %}
+    {% assign category_publications = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+    {% if category_publications.size > 0 %}
+      <section class="publications__section" aria-labelledby="publications-{{ category[0] }}">
+        <h2 class="publications__section-title" id="publications-{{ category[0] }}">
+          {{ category[1].title }}
+        </h2>
+        {% include publication-list.html publications=category_publications %}
+      </section>
+    {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  {% assign all_publications = site.publications | sort: "date" | reverse %}
+  {% include publication-list.html publications=all_publications %}
 {% endif %}
-
-
+</div>
 

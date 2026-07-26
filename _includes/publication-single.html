@@ -1,0 +1,105 @@
+{% assign publication = include.publication %}
+{% assign publication_title = publication.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign publication_year = publication.date | default: "1900-01-01" | date: "%Y" %}
+{% assign publication_abbr = publication.abbr %}
+{% assign publication_tier = publication.tier | default: "Others" %}
+{% assign publication_tier_class = publication_tier | slugify %}
+
+{% unless publication_abbr %}
+  {% case publication.category %}
+    {% when "preprints" %}
+      {% assign publication_abbr = "Preprint" %}
+    {% when "conferences" %}
+      {% assign publication_abbr = "Conf." %}
+    {% when "domestics" %}
+      {% assign publication_abbr = "Domestic" %}
+    {% else %}
+      {% assign publication_abbr = "Paper" %}
+  {% endcase %}
+{% endunless %}
+
+<li class="publication">
+  <div class="publication__label">
+    <span class="publication__badge publication__badge--{{ publication_tier_class }}">
+      <span class="publication__abbr">{{ publication_abbr }}</span>
+    </span>
+  </div>
+
+  <article class="publication__content" itemscope itemtype="https://schema.org/ScholarlyArticle">
+    <h4 class="publication__title" itemprop="headline">
+      {% if publication.detail_page %}
+        <a href="{{ base_path }}{{ publication.url }}" rel="permalink">{{ publication_title }}</a>
+      {% else %}
+        {{ publication_title }}
+      {% endif %}
+    </h4>
+
+    {% if publication.authors %}
+      <div class="publication__authors" itemprop="author">
+        {{ publication.authors | markdownify | remove: "<p>" | remove: "</p>" }}
+      </div>
+    {% endif %}
+
+    <div class="publication__venue">
+      {% if publication.venue %}<em>{{ publication.venue }}</em>{% endif %}{% if publication.location %}, {{ publication.location }}{% endif %}{% if publication.venue or publication.location %}, {% endif %}{{ publication_year }}
+    </div>
+
+    {% if publication.excerpt %}
+      <div class="publication__summary" itemprop="description">
+        {{ publication.excerpt | markdownify }}
+      </div>
+    {% endif %}
+
+    {% if publication.award or publication.additional_info %}
+      <div class="publication__note">
+        {% if publication.award %}<i class="fa fa-trophy" aria-hidden="true"></i> {{ publication.award }}{% endif %}
+        {% if publication.additional_info %}{{ publication.additional_info | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %}
+      </div>
+    {% endif %}
+
+    {% if publication.preprinturl or publication.paperurl or publication.doiurl or publication.dbpia or publication.codeurl or publication.fullversionurl or publication.artifacturl or publication.slidesurl or publication.bibtexurl or publication.website or publication.detail_page %}
+      <div class="publication__links" aria-label="Publication resources">
+      {% if publication.preprinturl %}
+        <a class="publication__button" href="{{ publication.preprinturl }}">Preprint</a>
+      {% endif %}
+      {% if publication.paperurl %}
+        <a class="publication__button" href="{{ publication.paperurl }}">PDF</a>
+      {% endif %}
+      {% if publication.doiurl %}
+        <a class="publication__button" href="{{ publication.doiurl }}">DOI</a>
+      {% endif %}
+      {% if publication.dbpia %}
+        <a class="publication__button" href="{{ publication.dbpia }}">DBpia</a>
+      {% endif %}
+      {% if publication.codeurl %}
+        <a class="publication__button" href="{{ publication.codeurl }}">Code</a>
+      {% endif %}
+      {% if publication.fullversionurl %}
+        <a class="publication__button" href="{{ publication.fullversionurl }}">Full version</a>
+      {% endif %}
+      {% if publication.artifacturl %}
+        <a class="publication__button" href="{{ publication.artifacturl }}">Artifact</a>
+      {% endif %}
+      {% if publication.slidesurl %}
+        <a class="publication__button" href="{{ publication.slidesurl }}">Slides</a>
+      {% endif %}
+      {% if publication.bibtexurl %}
+        <a class="publication__button" href="{{ publication.bibtexurl }}">Bib</a>
+      {% endif %}
+      {% if publication.website %}
+        <a class="publication__button" href="{{ publication.website }}">Website</a>
+      {% endif %}
+      {% if publication.detail_page %}
+        <a class="publication__button" href="{{ base_path }}{{ publication.url }}" rel="permalink">Details</a>
+      {% endif %}
+      </div>
+    {% endif %}
+
+    {% if publication.bibtex %}
+      <details class="publication__citation">
+        <summary>BibTeX</summary>
+        <pre><code>{{ publication.bibtex | escape }}</code></pre>
+      </details>
+    {% endif %}
+  </article>
+</li>

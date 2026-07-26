@@ -1,0 +1,12 @@
+{% assign publications_by_year = include.publications | group_by_exp: "publication", "publication.date | date: '%Y'" %}
+
+{% for year in publications_by_year %}
+  <div class="publications__year-group">
+    <h3 class="publications__year"><span>{{ year.name }}</span></h3>
+    <ol class="publications__list">
+      {% for publication in year.items %}
+        {% include publication-single.html publication=publication %}
+      {% endfor %}
+    </ol>
+  </div>
+{% endfor %}

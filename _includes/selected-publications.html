@@ -1,0 +1,24 @@
+{% assign selected_publication_keys = include.keys %}
+{% assign selected_publication_count = 0 %}
+
+<div class="selected-publications">
+  <ol class="publications__list publications__list--selected">
+    {% for paper_key in selected_publication_keys %}
+      {% assign selected_publication = site.publications | where: "paper_key", paper_key | first %}
+      {% if selected_publication %}
+        {% assign selected_publication_count = selected_publication_count | plus: 1 %}
+        {% include publication-single.html publication=selected_publication %}
+      {% else %}
+        <!-- No publication found for paper_key: {{ paper_key }} -->
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  {% if selected_publication_count == 0 %}
+    <p class="selected-publications__empty">No selected publications are configured yet.</p>
+  {% endif %}
+
+  <p class="selected-publications__more">
+    <a href="{{ '/publications/' | relative_url }}">View all publications <span aria-hidden="true">&rarr;</span></a>
+  </p>
+</div>

@@ -1,0 +1,133 @@
+/* ==========================================================================
+   NEWS
+   ========================================================================== */
+
+.news__intro {
+  margin-bottom: 1.75rem;
+  color: var(--global-text-color);
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 4.5rem 4.25rem minmax(0, 1fr);
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:first-child {
+    padding-top: 0.2rem;
+  }
+}
+
+.news-item__date {
+  padding-top: 0.12rem;
+  color: var(--global-base-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.news-item__category {
+  --news-badge-color: 100, 116, 139;
+
+  align-self: start;
+  justify-self: start;
+  margin-top: 0.08rem;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid rgba(var(--news-badge-color), 0.28);
+  border-radius: 999px;
+  background: rgba(var(--news-badge-color), 0.12);
+  color: var(--global-text-color);
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.news-item__category--service {
+  --news-badge-color: 37, 99, 235;
+}
+
+.news-item__category--award {
+  --news-badge-color: 217, 119, 6;
+}
+
+.news-item__category--paper {
+  --news-badge-color: 5, 150, 105;
+}
+
+.news-item__category--academic {
+  --news-badge-color: 124, 58, 237;
+}
+
+.news-item__category--talk {
+  --news-badge-color: 225, 29, 72;
+}
+
+.news-item__body {
+  min-width: 0;
+}
+
+.news-item__text {
+  font-size: 0.9rem;
+  line-height: 1.55;
+
+  p {
+    display: inline;
+    margin: 0;
+    font-size: inherit;
+  }
+}
+
+.news__more {
+  margin-top: 1rem;
+  text-align: right;
+
+  a {
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.news-list--compact {
+  .news-item {
+    padding: 0.32rem 0;
+    border-bottom: 0;
+  }
+
+  .news-item:first-child {
+    padding-top: 0;
+  }
+
+  .news-item__text {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: $small) {
+  .news-item {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 0.2rem 0.4rem;
+  }
+
+  .news-item__body {
+    grid-column: 1 / -1;
+  }
+
+  .news-list--compact .news-item {
+    gap: 0.1rem 0.4rem;
+  }
+}

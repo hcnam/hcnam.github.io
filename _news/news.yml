@@ -1,0 +1,137 @@
+---
+items:
+  - date: "Jul 2026"
+    sort_date: 2026-07-23
+    category: "Service"
+    text: "I'm going to serve as a PC member at **USENIX Security 2027**."
+  
+  - date: "Jul 2026"
+    sort_date: 2026-07-15
+    category: "Service"
+    text: "I'm going to serve as a PC member at **ACM CCS 2026** Poster Sessions."
+
+  - date: "Jun 2026"
+    sort_date: 2026-06-24
+    category: "Service"
+    text: "I'm going to serve as a AEC member at **ACM CCS 2026**."
+
+  - date: "Jun 2026"
+    sort_date: 2026-06-02
+    category: "Service"
+    text: "I'm going to serve as a AEC member at **NDSS 2027**."
+
+  - date: "Feb 2026"
+    sort_date: 2026-02-24
+    category: "Talk"
+    text: "Presented our paper **\"On the Security Risks of Memory Adaptation and Augmentation in Data-plane DoS Mitigation\"** at **NDSS 2026**."
+
+  - date: "Dec 2025"
+    sort_date: 2025-12-15
+    category: "Paper"
+    text: "Our paper **\"Observing Starlink with Accessible Tools: An Empirical Experience Study of LEO Downlinks\"** was accepted to **SpaceSec 2026**."
+
+  - date: "Dec 2025"
+    sort_date: 2025-12-09
+    category: "Service"
+    text: "I'm going to serve as a AEC member at **USENIX Security 2026**."
+
+  - date: "Dec 2025"
+    sort_date: 2025-12-04
+    category: "Paper"
+    text: "Our paper **\"On the Security Risks of Memory Adaptation and Augmentation in Data-plane DoS Mitigation\"** was accepted to **NDSS 2026**."
+
+  - date: "Oct 2025"
+    sort_date: 2025-10-17
+    category: "Award"
+    text: "Received the **Distinguished Artifact Reviewers Award** at **ACM CCS 2025**."
+
+  - date: "Jun 2025"
+    sort_date: 2025-06-22
+    category: "Service"
+    text: "I'm going to serve as a PC member at **ACM CCS 2025** Poster/Demonstration Sessions."
+
+  - date: "May 2025"
+    sort_date: 2025-05-23
+    category: "Service"
+    text: "I'm going to serve as a AEC member at **ACM CCS 2025**."
+
+  - date: "May 2025"
+    sort_date: 2025-05-02
+    category: "Talk"
+    text: "I presented our paper **\"Fork State-Aware Differential Fuzzing for Blockchain Consensus Implementations\"** at **IEEE/ACM ICSE 2025**."    
+
+  - date: "Mar 2025"
+    sort_date: 2025-03-29
+    category: "Paper"
+    text: "Our paper **\"On Frontrunning Risks in Batch-Order Fair Systems for Blockchains\"** was (conditionally) accepted at **ACM CCS 2025**."
+
+  - date: "Oct 2024"
+    sort_date: 2024-10-31
+    category: "Paper"
+    text: "Our paper **\"Fork State-Aware Differential Fuzzing for Blockchain Consensus Implementations\"** was accepted at **IEEE/ACM ICSE 2025**."
+
+  - date: "Dec 2024"
+    sort_date: 2024-12-27
+    category: "Academic"
+    text: "Joined the SUCCESS Lab at **Texas A&M University** as a visiting scholar."
+
+  - date: "Aug 2022"
+    sort_date: 2022-08-29
+    category: "Academic"
+    text: "Started PhD studies in Computer Science (Information Security) at KAIST." 
+
+  - date: "Jul 2022"
+    sort_date: 2022-07-15
+    category: "Award"
+    text: "Received the **Best Teaching Assistant Award** from the **KAIST School of Computing**."
+
+  - date: "Jun 2022"
+    sort_date: 2022-06-16
+    category: "Academic"
+    text: "Approved to change academic status to PhD student (Move to integrated master's/PhD program)." 
+
+  - date: "May 2022"
+    sort_date: 2022-05-05
+    category: "Talk"
+    text: "Presented our paper **\"On the Claims of Weak Block Synchronization in Bitcoin\"** at **FC'22**."
+
+  - date: "Nov 2021"
+    sort_date: 2021-11-19
+    category: "Paper"
+    text: "Our short paper **\"On the Claims of Weak Block Synchronization in Bitcoin\"** was accepted at **Financial Cryptography and Data Security (FC) 2022**."
+
+  - date: "Aug 2021"
+    sort_date: 2021-08-30
+    category: "Academic"
+    text: "Started master's degree in Computer Science (Information Security) at KAIST."
+
+  - date: "Aug 2021"
+    sort_date: 2021-08-10
+    category: "Academic"
+    text: "Joined the NetS&P Lab at KAIST."
+
+  - date: "Aug 2021"
+    sort_date: 2021-08-18
+    category: "Academic"
+    text: "Graduated with honors from Dankook University."
+
+  - date: "Nov 2019"
+    sort_date: 2019-11-15
+    category: "Award"
+    text: "Won the Bronze Prize in the Dankook University SW Contest."
+
+  - date: "Aug 2019"
+    sort_date: 2019-08-14
+    category: "Award"
+    text: "Won KOSAF National Science & Technology Scholarship."
+
+  - date: "Jul 2019"
+    sort_date: 2019-07-16
+    category: "Misc"
+    text: "Attend USC Viterbi IMSC School of Engineering Software Pioneering Progaram in AI-based Data Science."
+
+  - date: "2018"
+    sort_date: 2018-12-31
+    category: "Award"
+    text: "Won 1st Place in the Dankook Univeristy Hacking Group Aegis Royale S6 CTF."
+---

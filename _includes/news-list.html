@@ -1,0 +1,25 @@
+{% assign news_document = site.news | first %}
+{% if news_document and news_document.items %}
+  {% assign sorted_news = news_document.items | sort: "sort_date" | reverse %}
+  {% assign news_limit = sorted_news.size %}
+  {% if include.limit %}
+    {% assign news_limit = include.limit %}
+  {% endif %}
+
+  <ol class="news-list{% if include.compact %} news-list--compact{% endif %}">
+    {% for news_item in sorted_news limit: news_limit %}
+      <li class="news-item">
+        <time class="news-item__date" datetime="{{ news_item.sort_date | date: '%Y-%m-%d' }}">
+          {{ news_item.date }}
+        </time>
+        {% assign news_category = news_item.category | default: "Misc" %}
+        <span class="news-item__category news-item__category--{{ news_category | slugify }}" aria-label="Category: {{ news_category }}">
+          {{ news_category }}
+        </span>
+        <div class="news-item__body">
+          <div class="news-item__text">{{ news_item.text | markdownify }}</div>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}
