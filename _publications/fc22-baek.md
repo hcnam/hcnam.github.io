@@ -14,7 +14,7 @@ detail_page: true
 authors: "Seungjin Baek<sup>*</sup>, **Hocheol Nam**<sup>*</sup>, Yongwoo Oh, Muoi Tran, and Min Suk Kang"
 paperurl: "https://fc22.ifca.ai/preproceedings/183.pdf"
 doiurl: "https://doi.org/10.1007/978-3-031-18283-9_33"
-fullversionurl: "https://eprint.iacr.org/2021/1282"
+preprinturl: "https://eprint.iacr.org/2021/1282"
 additional_info: "<sup>*</sup>Co-first authors"
 bibtex: |
   @inproceedings{baek2022short,

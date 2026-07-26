@@ -59,26 +59,38 @@
 
     {% if publication.preprinturl or publication.paperurl or publication.doiurl or publication.dbpia or publication.codeurl or publication.fullversionurl or publication.artifacturl or publication.slidesurl or publication.bibtexurl or publication.website or publication.detail_page %}
       <div class="publication__links" aria-label="Publication resources">
-      {% if publication.preprinturl %}
-        <a class="publication__button" href="{{ publication.preprinturl }}">Preprint</a>
-      {% endif %}
       {% if publication.paperurl %}
-        <a class="publication__button" href="{{ publication.paperurl }}">PDF</a>
+        <a class="publication__button" href="{{ publication.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
+      {% endif %}
+      {% if publication.fullversionurl %}
+        {% if publication.fullversionurl contains "eprint.iacr.org" %}
+          <a class="publication__button" href="{{ publication.fullversionurl }}"><i class="ai ai-open-access" aria-hidden="true"></i> Full version</a>
+        {% elsif publication.fullversionurl contains "arxiv.org" %}
+          <a class="publication__button" href="{{ publication.fullversionurl }}"><i class="ai ai-arxiv" aria-hidden="true"></i> Full version</a>
+        {% else %}
+          <a class="publication__button" href="{{ publication.fullversionurl }}"><i class="fas fa-file-alt" aria-hidden="true"></i> Full version</a>
+        {% endif %}
       {% endif %}
       {% if publication.doiurl %}
-        <a class="publication__button" href="{{ publication.doiurl }}">DOI</a>
+        <a class="publication__button" href="{{ publication.doiurl }}"><i class="ai ai-doi" aria-hidden="true"></i> DOI</a>
+      {% endif %}
+      {% if publication.preprinturl %}
+        {% if publication.preprinturl contains "eprint.iacr.org" %}
+          <a class="publication__button" href="{{ publication.preprinturl }}"><i class="ai ai-open-access" aria-hidden="true"></i> Preprint</a>
+        {% elsif publication.preprinturl contains "arxiv.org" %}
+          <a class="publication__button" href="{{ publication.preprinturl }}"><i class="ai ai-arxiv" aria-hidden="true"></i> Preprint</a>
+        {% else %}
+          <a class="publication__button" href="{{ publication.preprinturl }}"><i class="fas fa-file-alt" aria-hidden="true"></i> Preprint</a>
+        {% endif %}
+      {% endif %}
+      {% if publication.codeurl %}
+        <a class="publication__button" href="{{ publication.codeurl }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      {% endif %}
+      {% if publication.artifacturl %}
+        <a class="publication__button" href="{{ publication.artifacturl }}"><i class="ai ai-zenodo" aria-hidden="true"></i> Zenodo</a>
       {% endif %}
       {% if publication.dbpia %}
         <a class="publication__button" href="{{ publication.dbpia }}">DBpia</a>
-      {% endif %}
-      {% if publication.codeurl %}
-        <a class="publication__button" href="{{ publication.codeurl }}">Code</a>
-      {% endif %}
-      {% if publication.fullversionurl %}
-        <a class="publication__button" href="{{ publication.fullversionurl }}">Full version</a>
-      {% endif %}
-      {% if publication.artifacturl %}
-        <a class="publication__button" href="{{ publication.artifacturl }}">Artifact</a>
       {% endif %}
       {% if publication.slidesurl %}
         <a class="publication__button" href="{{ publication.slidesurl }}">Slides</a>
