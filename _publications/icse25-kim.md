@@ -12,7 +12,7 @@ abbr: "ICSE"
 tier: "Tier-1"
 detail_page: true
 authors: "Wonhoi Kim<sup>*</sup>, **Hocheol Nam**<sup>*</sup>, Muoi Tran, Amin Jalilov, Zhenkai Liang, Sang Kil Cha, and Min Suk Kang"
-paperurl: "/files/kim-icse25.pdf"
+paperurl: "https://softsec.kaist.ac.kr/~sangkilc/papers/kim-icse25.pdf"
 doiurl: "https://doi.org/10.1109/ICSE55347.2025.00085"
 codeurl: "https://github.com/NetSP-KAIST/forky"
 artifacturl: "https://zenodo.org/records/14641017"
