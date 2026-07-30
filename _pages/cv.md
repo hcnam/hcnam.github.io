@@ -77,7 +77,7 @@ Academic Service
   * NDSS 2027
   * ACM CCS 2026
   * USENIX Security 2026
-  * ACM CCS 2025
+  * ACM CCS 2025 (🏆 Distinguished Artifact Reviewer)
 
 ---
 
