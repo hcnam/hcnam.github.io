@@ -22,7 +22,7 @@ Education
 
 Experience
 ======
-* Aug. 2025 - Dec. 2024: **Graduate Research Assistant**
+* Jul. 2025 - present: **Graduate Research Assistant**
   * NetS&P Lab, KAIST, Daejeon, Republic of Korea
   * Advisor: [Min Suk Kang](https://netsp.kaist.ac.kr/min-suk-kang)
 
@@ -45,12 +45,15 @@ Experience
 * Feb 2016 - Nov.2017: **Sergeant**
   * The Capital Defense Command, R.O.K. Army, Seoul, Republic of Korea
 
+---
+
 
 Selected Publications
 ======
 
 {% include selected-publications.html keys=site.data.selected_publications %}
-  
+
+--- 
   
 Teaching
 ======
@@ -69,10 +72,10 @@ Academic Service
 ======
 * Program Committee
   * USENIX Security 2027
-* Reviewer
-  * IEEE Transactions on Dependable and Secure Computing (TDSC) [2025 - present]
   * ACM CCS (Poster Sessions) 2026
   * ACM CCS (Poster/Demonstration Sessions) 2025
+* Reviewer
+  * IEEE Transactions on Dependable and Secure Computing (TDSC) [since 2025]
 * Artifact Evaluation Committee
   * NDSS 2027
   * ACM CCS 2026
