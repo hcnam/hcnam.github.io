@@ -16,7 +16,7 @@ You can download my <a href="/files/hcnam_cv.pdf">full CV</a>.
 Education
 ======
 * Ph.D in Computer Science (Information Security), KAIST, 2027 (expected)
-* B.S. in Computer Science, Dankook University, 2012
+* B.S. in Computer Science, Dankook University, 2021
 
 ---
 
