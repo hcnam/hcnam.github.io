@@ -76,6 +76,7 @@ Academic Service
   * ACM CCS (Poster/Demonstration Sessions) 2025
 * Reviewer
   * IEEE Transactions on Dependable and Secure Computing (TDSC) [since 2025]
+  * ACM Transactions on Privacy and Security (TOPS) [since 2026]
 * Artifact Evaluation Committee
   * NDSS 2027
   * ACM CCS 2026
