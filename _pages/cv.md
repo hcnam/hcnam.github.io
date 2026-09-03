@@ -78,6 +78,7 @@ Academic Service
   * IEEE Transactions on Dependable and Secure Computing (TDSC) [since 2025]
   * ACM Transactions on Privacy and Security (TOPS) [since 2026]
 * Artifact Evaluation Committee
+  * IEEE S&P 2027
   * NDSS 2027
   * ACM CCS 2026
   * USENIX Security 2026
