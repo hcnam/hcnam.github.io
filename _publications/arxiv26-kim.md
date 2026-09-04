@@ -9,7 +9,6 @@ venue: "Preprint (arXiv)"
 abbr: "(arXiv)"
 tier: "Others"
 authors: "Dong Hyeok Kim, Xin Zhe Khooi, **Hocheol Nam**, Seungjin Baek, Mun Choon Chan, CheolJun Park, and Min Suk Kang"
-paperurl: "/files/park-ccs25.pdf"
 preprinturl: "https://arxiv.org/abs/2608.30615"
 bibtex: |
   @misc{kim2026buckler,
