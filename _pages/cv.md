@@ -72,7 +72,7 @@ Academic Service
 ======
 * Program Committee
   * USENIX Security 2027
-  * ACM CCS (Poster Sessions) 2026
+  * ACM CCS (Poster Session) 2026
   * ACM CCS (Poster/Demonstration Sessions) 2025
 * Reviewer
   * IEEE Transactions on Dependable and Secure Computing (TDSC) [since 2025]
