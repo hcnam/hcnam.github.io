@@ -1,5 +1,10 @@
 ---
 items:
+  - date: "Sep 2026"
+    sort_date: 2026-09-05
+    category: "Service"
+    text: "I'm going to serve as a AEC member at **IEEE S&P 2027**."
+  
   - date: "Jul 2026"
     sort_date: 2026-07-23
     category: "Service"
