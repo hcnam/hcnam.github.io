@@ -10,6 +10,7 @@ abbr: "KCC"
 tier: "Others"
 authors: "Janin Chaib, **Hocheol Nam**, Dong Hyeok Kim, and Min Suk Kang"
 excerpt: "저궤도 위성 기반 5G 비지상 네트워크의 축적 후 전달 운영 방식에서의 보안 및 프라이버시에 관한 연구"
+dbpia: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929716"
 ---
 
 Presented in June 2026.
