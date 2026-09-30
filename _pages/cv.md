@@ -58,6 +58,7 @@ Selected Publications
 Teaching
 ======
 * KAIST
+  * KTP50043 - Introduction to Cybersecurity (2026-Fall)
   * KTP50043 - Introduction to Cybersecurity (2025-Fall)
   * KTP543 - Introduction to Cybersecurity (2024-Fall)
   * CS348 - Introduction to Information Security (2024-Spring)
