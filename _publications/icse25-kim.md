@@ -9,7 +9,7 @@ date: 2025-04-27
 venue: "IEEE/ACM International Conference on Software Engineering (ICSE)"
 location: "Ottawa, ON, Canada"
 abbr: "ICSE"
-tier: "Tier-1"
+tier: "A*"
 detail_page: true
 authors: "Wonhoi Kim<sup>*</sup>, **Hocheol Nam**<sup>*</sup>, Muoi Tran, Amin Jalilov, Zhenkai Liang, Sang Kil Cha, and Min Suk Kang"
 paperurl: "https://softsec.kaist.ac.kr/~sangkilc/papers/kim-icse25.pdf"

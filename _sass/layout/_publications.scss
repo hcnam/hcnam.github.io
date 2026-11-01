@@ -47,12 +47,20 @@
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.14);
 }
 
-.publications__tier-swatch--tier-1 {
+.publications__tier-swatch--a-star {
   background: linear-gradient(135deg, #c026d3, #f43f5e);
 }
 
-.publications__tier-swatch--tier-2 {
+.publications__tier-swatch--a {
   background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.publications__tier-swatch--b {
+  background: linear-gradient(135deg, #059669, #34d399);
+}
+
+.publications__tier-swatch--c {
+  background: linear-gradient(135deg, #d97706, #fbbf24);
 }
 
 .publications__section {
@@ -132,12 +140,20 @@
   white-space: nowrap;
 }
 
-.publication__badge--tier-1 {
+.publication__badge--a-star {
   background: linear-gradient(135deg, #c026d3, #f43f5e);
 }
 
-.publication__badge--tier-2 {
+.publication__badge--a {
   background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.publication__badge--b {
+  background: linear-gradient(135deg, #059669, #34d399);
+}
+
+.publication__badge--c {
+  background: linear-gradient(135deg, #d97706, #fbbf24);
 }
 
 .publication__abbr {

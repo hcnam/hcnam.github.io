@@ -9,7 +9,7 @@ date: 2025-10-13
 venue: "ACM SIGSAC Conference on Computer and Communications Security (CCS)"
 location: "Taipei, Taiwan"
 abbr: "CCS"
-tier: "Tier-1"
+tier: "A*"
 detail_page: true
 authors: "Eunchan Park, Taeung Yoon, **Hocheol Nam**, Deepak Maram, and Min Suk Kang"
 paperurl: "/files/park-ccs25.pdf"

@@ -9,7 +9,7 @@ venue: "Financial Cryptography and Data Security (FC)"
 excerpt: "We re-evaluates claims that Bitcoin has slow block propagation. We show that block synchronization is actually fast enough, and that previous slow-propagation claims stemmed from bugs and limits in monitoring tools. We finally ask several open-ended questions regarding the technical and ethical issues around monitoring blockchain networks."
 location: "St. George's, Grenada"
 abbr: "FC"
-tier: "Tier-2"
+tier: "A"
 detail_page: true
 authors: "Seungjin Baek<sup>*</sup>, **Hocheol Nam**<sup>*</sup>, Yongwoo Oh, Muoi Tran, and Min Suk Kang"
 paperurl: "https://fc22.ifca.ai/preproceedings/183.pdf"

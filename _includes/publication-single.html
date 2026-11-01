@@ -3,7 +3,13 @@
 {% assign publication_year = publication.date | default: "1900-01-01" | date: "%Y" %}
 {% assign publication_abbr = publication.abbr %}
 {% assign publication_tier = publication.tier | default: "Others" %}
-{% assign publication_tier_class = publication_tier | slugify %}
+{% case publication_tier %}
+  {% when "A*" %}{% assign publication_tier_class = "a-star" %}
+  {% when "A" %}{% assign publication_tier_class = "a" %}
+  {% when "B" %}{% assign publication_tier_class = "b" %}
+  {% when "C" %}{% assign publication_tier_class = "c" %}
+  {% else %}{% assign publication_tier_class = "others" %}
+{% endcase %}
 
 {% unless publication_abbr %}
   {% case publication.category %}

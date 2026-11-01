@@ -9,7 +9,7 @@ date: 2026-02-24
 venue: "Network and Distributed System Security Symposium (NDSS)"
 location: "San Diego, CA, USA"
 abbr: "NDSS"
-tier: "Tier-1"
+tier: "A*"
 detail_page: true
 authors: "**Hocheol Nam**, Daehyun Lim, Huancheng Zhou, Guofei Gu, and Min Suk Kang"
 paperurl: "/files/nam-ndss26.pdf"

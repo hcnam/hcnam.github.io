@@ -8,7 +8,7 @@ date: 2020-08-01
 venue: "IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)"
 location: "Virtual"
 abbr: "RTCSA"
-tier: "Others"
+tier: "B"
 authors: "Seunggyun Lee, **Hocheol Nam**, Jaewon Park, and Seehwan Yoo"
 paperurl: "https://ieeexplore.ieee.org/document/9203645"
 doiurl: "https://doi.org/10.1109/RTCSA50079.2020.9203645"
